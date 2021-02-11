@@ -9,6 +9,9 @@ For the bare-metal version please check https://github.com/FelixMZ2018/stunning-
 Ruby Version: 3.0.0
 Rails Version: 6.1.2
 Database: Postgres 12.1
+Docker: 21.10.3
+Docker-Compose: 1.28.2
+
 ## API Documentation: https://www.notion.so/API-Demo-Documentation-76cb299bb3234cb4b170276143fc0821
 
 ## Startup
