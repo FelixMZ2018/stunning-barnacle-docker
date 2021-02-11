@@ -2,6 +2,9 @@
 ![rspec API testing](https://github.com/FelixMZ2018/stunning-barnacle/workflows/Rails%20tests/badge.svg)
 # README
 
+A demo rails/postgresql based API server, prepared to be used with docker-compose for easy deployment
+
+
 # Dockerized Rails API Demo: 
 
 For the bare-metal version please check https://github.com/FelixMZ2018/stunning-barnacle
