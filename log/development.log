@@ -1445,3 +1445,27 @@ Processing by Api::V1::MessagesController#create as */*
 Completed 200 OK in 46ms (Views: 0.5ms | ActiveRecord: 15.3ms | Allocations: 9148)
 
 
+Started POST "/api/v1/messages/create?content=%3Ca%20href=\%22https://www.w3schools.com/\%22%3E" for 172.27.0.1 at 2021-02-11 15:48:33 +0000
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"content"=>"<a href=\\\"https://www.w3schools.com/\\\">"}
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:26:in `create'
+  [1m[36mMessage Create (7.8ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "<a href=\"%5C%22https://www.w3schools.com/%5C%22\"></a>"], ["created_at", "2021-02-11 15:48:33.391787"], ["updated_at", "2021-02-11 15:48:33.391787"]]
+  ↳ app/controllers/api/v1/messages_controller.rb:26:in `create'
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:26:in `create'
+Completed 200 OK in 42ms (Views: 0.5ms | ActiveRecord: 28.0ms | Allocations: 3969)
+
+
+Started POST "/api/v1/messages/create?content=%3Ca%20href=\%22https://www.w3schools.com/\%22%3E" for 172.27.0.1 at 2021-02-11 15:48:34 +0000
+Processing by Api::V1::MessagesController#create as */*
+  Parameters: {"content"=>"<a href=\\\"https://www.w3schools.com/\\\">"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:26:in `create'
+  [1m[36mMessage Create (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "<a href=\"%5C%22https://www.w3schools.com/%5C%22\"></a>"], ["created_at", "2021-02-11 15:48:34.135288"], ["updated_at", "2021-02-11 15:48:34.135288"]]
+  ↳ app/controllers/api/v1/messages_controller.rb:26:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/messages_controller.rb:26:in `create'
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 1.8ms | Allocations: 1994)
+
+
