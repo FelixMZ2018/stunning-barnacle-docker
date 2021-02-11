@@ -19,7 +19,7 @@ Note: Requires docker and docker compose
 
 This repository is all set for use with docker compose to get started simply follow these steps
 
-To clone the repository localy `git clone `
+To clone the repository localy `git clone ` and change into the repo folder `cd stunning-barnacle-docker`
 
 To download the database and set up the docker dependencies `docker-compose up -d`
 
